@@ -716,10 +716,10 @@
             SoundManager.resume();
 
             if (event.key === 'ArrowLeft' || event.key === 'a') {
-                moveRight();
+                moveLeft();
             }
             if (event.key === 'ArrowRight' || event.key === 'd') {
-                moveLeft();
+                moveRight();
             }
             
             // We no longer calculate targetAngle from absolute lane to avoid wrap-around stutter.
