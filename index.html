@@ -535,24 +535,23 @@
             document.getElementById('btn-left').addEventListener('touchstart', (e) => {
                 e.preventDefault(); // prevent mouse emulation
                 SoundManager.resume();
-                moveLeft();
+                moveRight();            
             });
             document.getElementById('btn-right').addEventListener('touchstart', (e) => {
                 e.preventDefault();
                 SoundManager.resume();
-                moveRight();
+                moveLeft();
             });
             // Fallback for mouse clicks on PC testing
             document.getElementById('btn-left').addEventListener('mousedown', (e) => {
                 e.preventDefault(); // Prevent selection/focus artifacts
                 SoundManager.resume();
-                moveLeft();
+                moveRight();            
             });
             document.getElementById('btn-right').addEventListener('mousedown', (e) => {
                 e.preventDefault(); // Prevent selection/focus artifacts
                 SoundManager.resume();
-                moveRight();
-            });
+                moveLeft();            });
 
             requestAnimationFrame(animate);
         }
